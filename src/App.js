@@ -1,12 +1,12 @@
 import React from 'react';
 
-import WeatherCard from './WeatherCard';
+import Component from './components/WeatherCard/component';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <WeatherCard/>
+      <Component/>
     </div>
   );
 }
