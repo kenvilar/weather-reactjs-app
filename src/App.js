@@ -1,12 +1,14 @@
 import React from 'react';
 
-import Component from './components/WeatherCard/component';
+import WeatherCard from './components/WeatherCard/component';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Component/>
+      <WeatherCard temp='28'/>
+      <WeatherCard temp='15'/>
+      <WeatherCard temp='40'/>
     </div>
   );
 }

@@ -7,11 +7,13 @@ const Location = (props) => {
   `;
   const City = styled.h1`
     font-family: 'Merriweather', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 1;
   `;
   const Country = styled.h3`
     font-family: 'Fira Sans', sans-serif;
     font-size: 1.1rem;
+    line-height: 0;
   `;
 
   return (
