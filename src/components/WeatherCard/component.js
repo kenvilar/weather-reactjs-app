@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Location from './Location';
+import Condition from './Condition';
+import Icon from './Icon';
 
 const Component = () => {
   const red = 100;
@@ -14,13 +16,12 @@ const Component = () => {
     justify-content: space-around;
     align-items: center;
     border-radius: 15px;
-  `
+  `;
   return (
     <Card>
       <Location/>
-      <img className="icon" src="./img/mostly-cloudy.png" alt="Weather Icon"/>
-      <h1 className="temp">20°C</h1>
-      <h3 className="condition">Cloudy</h3>
+      <Icon/>
+      <Condition/>
     </Card>
   );
 };
