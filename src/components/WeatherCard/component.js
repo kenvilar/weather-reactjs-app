@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import {motion} from 'framer-motion';
+
 import Location from './Location';
 import Condition from './Condition';
 import Icon from './Icon';
@@ -39,11 +41,13 @@ const WeatherCard = ({temp, condition, city, country, getWeather}) => {
     border-radius: 15px;
   `;
   return (
-    <Card>
-      <Location city={city} country={country} getWeather={getWeather}/>
-      <Icon condition={condition}/>
-      <Condition temp={temp} condition={condition}/>
-    </Card>
+    <motion.div initial={{scale: 0}} animate={{scale: 1}}>
+      <Card>
+        <Location city={city} country={country} getWeather={getWeather}/>
+        <Icon condition={condition}/>
+        <Condition temp={temp} condition={condition}/>
+      </Card>
+    </motion.div>
   );
 };
 
