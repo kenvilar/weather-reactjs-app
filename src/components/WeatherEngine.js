@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import WeatherCard from './WeatherCard/component';
 
-const WeatherEngine = () => {
-  const location = 'Sydney, au';
+const WeatherEngine = ({location}) => {
   const [query, setQuery] = useState('Sydney, au');
   const [weather, setWeather] = useState({
     temp: null,
@@ -36,8 +35,6 @@ const WeatherEngine = () => {
     <div className="App">
       <WeatherCard temp={weather.temp} condition={weather.condition}
                    city={weather.city} country={weather.country}/>
-      {/*<WeatherCard temp={20} condition="Dust" city="Melbourne" country="AU"/>*/}
-      {/*<WeatherCard temp={40} condition="Tornado" city="London" country="GB"/>*/}
       <form action="">
         <input type="search" value={query}
                onChange={e => setQuery(e.target.value)}/>
