@@ -3,7 +3,6 @@ import PulseLoader from 'react-spinners/PulseLoader';
 import WeatherCard from './WeatherCard/component';
 
 const WeatherEngine = ({location}) => {
-  const [query, setQuery] = useState('Sydney, au');
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   const [weather, setWeather] = useState({
@@ -14,10 +13,10 @@ const WeatherEngine = ({location}) => {
   });
 
   const getWeather = async q => {
-    setQuery('');
     setLoading(true);
     try {
       const apiRes = await fetch(
+        //input your api key here after appid=
         `http://api.openweathermap.org/data/2.5/weather?q=${q}&units=metric&appid=`);
       const resJson = await apiRes.json();
       setWeather({

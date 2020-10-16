@@ -6,7 +6,7 @@ const Icon = ({condition}) => {
     width: 20%;
   `;
 
-  var icon = '';
+  let icon = '';
   switch (condition) {
     case 'Clouds':
       icon = `./img/Mostly Cloudy.png`;

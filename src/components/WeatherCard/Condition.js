@@ -36,12 +36,6 @@ const reelStyle = {
   },
 };
 
-const Temp = styled.h1`
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 2rem;
-    font-weight: 200;
-    line-height: 0;
-  `;
 const State = styled.h3`
     font-family: 'Merriweather', sans-serif;
     font-size: 1.2rem;

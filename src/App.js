@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <WeatherEngine location="Dipolog, ph"/>
-      {/*<WeatherEngine location="Cebu, ph"/>
-      <WeatherEngine location="Iligan, ph"/>*/}
+      <WeatherEngine location="Cebu, ph"/>
+      <WeatherEngine location="Iligan, ph"/>
     </div>
   );
 }
