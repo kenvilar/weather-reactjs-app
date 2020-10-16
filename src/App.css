@@ -3,4 +3,7 @@
 .App {
     margin: 0 auto;
     color: #ffffff;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
 }

@@ -5,9 +5,9 @@ import WeatherEngine from './components/WeatherEngine';
 function App() {
   return (
     <div className="App">
-      <WeatherEngine location="Sydney, au"/>
-      {/*<WeatherEngine location="Melton, au"/>
-      <WeatherEngine location="Manila, ph"/>*/}
+      <WeatherEngine location="Dipolog, ph"/>
+      {/*<WeatherEngine location="Cebu, ph"/>
+      <WeatherEngine location="Iligan, ph"/>*/}
     </div>
   );
 }
