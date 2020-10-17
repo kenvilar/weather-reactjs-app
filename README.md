@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Instructions
+
+Rename the file **_.env.sample_** to **_.env_** and put your weather api key after ``REACT_APP_WEATHER_KEY=``
+
 ## Available Scripts
 
 In the project directory, you can run:
