@@ -17,7 +17,7 @@ const WeatherEngine = ({location}) => {
     try {
       const apiRes = await fetch(
         //input your api key here after appid=
-        `http://api.openweathermap.org/data/2.5/weather?q=${q}&units=metric&appid=`);
+        `http://api.openweathermap.org/data/2.5/weather?q=${q}&units=metric&appid=${process.env.REACT_APP_WEATHER_KEY}`);
       const resJson = await apiRes.json();
       setWeather({
         temp: resJson.main.temp,
